@@ -160,5 +160,11 @@
 		<module name="com.puppycrawl.tools.checkstyle.checks.whitespace.TypecastParenPadCheck" />
 		<module name="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAfterCheck" />
 		<module name="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck" />
+
+		<!-- LineLength -->
+		<module name="LineLength">
+			<property name="max" value="160"/>
+		</module>
 	</module>
+
 </module>
