@@ -18,8 +18,7 @@
 		<module name="com.puppycrawl.tools.checkstyle.checks.annotation.MissingOverrideCheck" />
 		<module name="com.puppycrawl.tools.checkstyle.checks.annotation.PackageAnnotationCheck" />
 		<module name="com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationLocationCheck">
-			<property name="allowSamelineSingleParameterlessAnnotation"
-					  value="false" />
+			<property name="allowSamelineSingleParameterlessAnnotation" value="false" />
 		</module>
 
 		<!-- Block Checks -->
@@ -75,7 +74,7 @@
 			<property name="processJavadoc" value="true" />
 		</module>
 		<module name="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck">
-			<property name="groups" value="java,/^javax?\./,*,org,com,com.sf" />
+			<property name="groups" value="/^java\./,javax,org,com,com.sf,*" />
 			<property name="ordered" value="true" />
 			<property name="separated" value="true" />
 			<property name="option" value="bottom" />
@@ -123,22 +122,19 @@
 		<!-- Regexp -->
 		<module name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck">
 			<property name="format" value="^\t* +\t*\S" />
-			<property name="message"
-					  value="Line has leading space characters; indentation should be performed with tabs only." />
+			<property name="message" value="Line has leading space characters; indentation should be performed with tabs only." />
 			<property name="ignoreComments" value="true" />
 		</module>
 		<module name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck">
 			<property name="maximum" value="0"/>
 			<property name="format" value="org\.mockito\.Mockito\.(when|doThrow|doAnswer)" />
-			<property name="message"
-					  value="Please use BDDMockito imports." />
+			<property name="message" value="Please use BDDMockito imports." />
 			<property name="ignoreComments" value="true" />
 		</module>
 		<module name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineJavaCheck">
 			<property name="maximum" value="0"/>
 			<property name="format" value="org\.junit\.Assert\.assert" />
-			<property name="message"
-					  value="Please use AssertJ imports." />
+			<property name="message" value="Please use AssertJ imports." />
 			<property name="ignoreComments" value="true" />
 		</module>
 		<module name="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpCheck">
