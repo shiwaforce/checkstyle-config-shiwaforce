@@ -13,7 +13,7 @@
 	<module name="com.puppycrawl.tools.checkstyle.TreeWalker">
 		<!-- Annotations -->
 		<module name="com.puppycrawl.tools.checkstyle.checks.annotation.AnnotationUseStyleCheck">
-			<property name="elementStyle" value="compact" />
+			<property name="elementStyle" value="compact_no_array" />
 		</module>
 		<module name="com.puppycrawl.tools.checkstyle.checks.annotation.MissingOverrideCheck" />
 		<module name="com.puppycrawl.tools.checkstyle.checks.annotation.PackageAnnotationCheck" />
