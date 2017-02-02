@@ -56,10 +56,10 @@
 			<property name="max" value="3" />
 		</module>
 		<module name="com.puppycrawl.tools.checkstyle.checks.coding.MultipleVariableDeclarationsCheck" />
-		<module name="com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck">
+		<!--		<module name="com.puppycrawl.tools.checkstyle.checks.coding.RequireThisCheck">
 			<property name="checkMethods" value="false" />
 			<property name="validateOnlyOverlapping" value="false" />
-		</module>
+		</module>-->
 		<module name="com.puppycrawl.tools.checkstyle.checks.coding.OneStatementPerLineCheck" />
 
 		<!-- Imports -->
