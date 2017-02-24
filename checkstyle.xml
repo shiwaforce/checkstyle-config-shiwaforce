@@ -157,7 +157,7 @@
 
 		<!-- LineLength -->
 		<module name="LineLength">
-			<property name="max" value="160"/>
+			<property name="max" value="120"/>
 			<property name="tabWidth" value="4"/>
 		</module>
 	</module>
